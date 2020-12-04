@@ -1,6 +1,7 @@
 body {
 
     font-family: 'Inter', sans-serif;
+    font-size: 14px;
 
 }
 
@@ -10,12 +11,32 @@ body {
     color: #010101;
 }
 
+.light .nav-link {
+
+    
+    color:#010101;
+    
+}
+
+.dark {
+
+    background-color: #010101;
+    color: #F3F2F0;
+}
+
+.dark .nav-link {
+
+    color:#F3F2F0;
+   
+}
+
 .wrapper {
 
     max-width: 1140px;
     margin: 0 auto;
     padding-left: 15px;
     padding-right: 15px;
+    
 }
 
 .name {
@@ -30,15 +51,23 @@ body {
     text-transform: uppercase;
 }
 
+.title-h3 {
+
+    font-size: 16px;
+    font-weight: 700;
+}
+
 .photo {
 
     margin-bottom: 120px;
     width: 100%;
+   
 }
 
 header {
 
-    display: flex;
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .nav {
@@ -61,12 +90,69 @@ header {
     padding-left: none;
 }
 
+.nav-item:last-child {
+
+    padding-right: 0;
+}
+
 .nav-link {
     text-decoration: none;
-    color:#010101;
+   
     font-size: 14px;
 }
 
 .nav-link:hover {
+
     color: #D40000;
+}
+
+.social {
+
+    display: flex;
+    justify-content: space-between;
+    padding-top: 100px;
+    padding-bottom: 60px;
+   
+}
+
+
+
+.project {
+
+    margin: 0;
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-weight: bold;
+
+}
+
+.project-img {
+
+    width: 16px;
+    height: 12px;
+    display: block;
+    background-image: url(../Portfolio1/img1/photo/Arrow.svg);
+    margin-left: 15px;
+
+}
+
+.skills {
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-item {
+    flex: 0 0 24%;
+}
+
+.skills .title-h3 {
+
+    text-transform: uppercase;
+}
+
+.skills .description {
+
+   line-height: 150%;
 }
